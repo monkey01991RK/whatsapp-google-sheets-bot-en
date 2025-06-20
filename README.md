@@ -33,11 +33,9 @@ In our example, the bot will react to commands in the form of regular WhatsApp m
 
 ## Preparation and Setting Up Google Services
 
-The example of working with API we offer below is based on the official article [Node.js Quickstart from Google](https://developers.Google.com/sheets/api/quickstart/nodejs)
+The example of working with API we offer below is based on the official article 
 
 ### Setting Up an Account to Work with API
-
-First of all, go to the [developer’s website](https://console.developers.Google.com/) and create a new project.
 
 This done, open the _Library_ tab
 
@@ -53,7 +51,7 @@ Select the type of the key - _JSON_. After that, download a JSON file with data.
 
 Your account is almost set up. All that is left to do now is enable the account as _Editor_ in Google Sheets. To do this, open the sheet and press the _Access Settings_ button.
 
-We need to add the account that we created as the editor of this table. Now look up the email address of the account in the [developers console](https://console.developers.Google.com/) in the Credentials tab and copy it.
+We need to add the account that we created as the editor of this table. Now look up the email address of the account in the developers console in the Credentials tab and copy it.
 
 Your services are now ready to go! Let’s move on to the project itself.
 
@@ -303,7 +301,7 @@ Now that your function is ready, you can describe the main bot logic. Describe t
 
 The function and the handler are one and the same thing; they process POST requests at the server’s main address ('/' path is responsible for that). **data** is the received JSON file.
 
-To figure out what particular JSON will come to the server, use the following [testing tools](https://app.chat-api.com/testing).
+To figure out what particular JSON will come to the server, use the following 
 
     app.post('/', async function (req, res) {
         const data = req.body;
@@ -458,10 +456,6 @@ Once you have launched the bot, you will see a notification about a successful c
 ## Whatsapp bot in conjunction with Google Sheets is ready
 
 So, we described the work of a simple whatsapp chatbot and posted the source code with ready-to-use functionality on github.
-
-The entire code and guide will be available at the link: [https://github.com/chatapi/whatsapp-google-sheets-bot-en](https://github.com/chatapi/whatsapp-google-sheets-bot-en "whatsapp bot using Google sheets api")
-
-![How to Create a WhatsApp Bot with NodeJS Using Google Sheets API](https://chat-api.com/img/googlesheets/en/whatsapp-bot-google-sheets-en.jpg)
 
 You only need to substitute in the code your token from your personal account and instance number.
 
